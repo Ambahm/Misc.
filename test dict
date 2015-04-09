@@ -1,0 +1,27 @@
+# Write your code below!
+CUSTOMERS = {
+    1: {'name': 'Ekaterin Vorsoisson', 'email': 'evorsoisson@komarr.net'},
+    2: {'name': 'Cordelia Naismith', 'email': 'cordelia@beta.com'},
+    3: {'name': 'Ivan Vorpatril', 'email': 'iv398@barrayar.net'}}
+    
+ORDERS = {
+    13: {'customer_id': 1, 'total': 287},
+    15: {'customer_id': 2, 'total': 92},
+    #17: {'customer_id': 3, 'total': 148},
+    19: {'customer_id': 2, 'total': 159}}
+    
+#print dict(ORDERS)
+#for value in CUSTOMERS.values():
+   # print value
+    
+
+new_dict= {}
+#print dict(ORDERS)
+for x, value in CUSTOMERS.iteritems():
+    new_dict.update({'customer_id':value})
+    for y,  val in ORDERS.iteritems():
+        if  x == value['customer_id']:
+            print True
+    #new_dict= CUSTOMERS.copy()
+    #if 
+#print new_dict
