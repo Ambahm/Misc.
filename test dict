@@ -25,3 +25,15 @@ for x, value in CUSTOMERS.iteritems():
     #new_dict= CUSTOMERS.copy()
     #if 
 #print new_dict
+
+
+new_dict= {}
+#print dict(ORDERS)
+for x, value in CUSTOMERS.iteritems():
+    new_dict.update({'customer_id':value})
+    for y,  val in ORDERS.iteritems():
+        if y in CUSTOMERS:
+            print True
+    #new_dict= CUSTOMERS.copy()
+    #if 
+#print new_dict
